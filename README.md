@@ -37,22 +37,22 @@ Here, we have manually configured the IP address, subnet mask, and DNS server. B
 <br />
 <br/>
 
-__2. Adding AD Domain Services__ <br/>
+__2. Adding AD Domain Services and Post Deployment Configuration__ <br/>
 <br/>
 a. Next we will be adding AD Domain Services: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/888ec3e102923dc668412a4d4668d7b0429c636f/images/nc_6.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
-b. Select the Standard Desktop Experience for GUI and ease of use: <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/7cca62df74893d64752e848328e66cf789d87fa9/images/dc_8.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+b. Post-deployment configuration: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/7d2b6b00db83259673f2465f2696081894db7a65/images/nc_8.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />  
 <br />
-c. Set a password for the admin account:  <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/7cca62df74893d64752e848328e66cf789d87fa9/images/dc_10.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+c. Creating the main domain forest:  <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/7d2b6b00db83259673f2465f2696081894db7a65/images/nc_9.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-d. After successfully logging in, our VM will be ready:  <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/7cca62df74893d64752e848328e66cf789d87fa9/images/dc_11.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+d. After successfully completeing configuration, the domain name and admin account will be visible:  <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/7d2b6b00db83259673f2465f2696081894db7a65/images/nc_11.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 </p>
