@@ -27,12 +27,12 @@ a. Distinguish the internal network from the NAT connection by renaming them. In
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-b. Allocate the appropriate RAM and CPU cores:  <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/30e3c09a26f35254b2a7c6c866a2f4e5d0d049b8/images/dc_2.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+b. Provide the IPv4 address for the Domain Controller's internal network adapter:  <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_4.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br/>
 <br />
-c. Allocate the amount of storage, 20 GB is plenty: <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/56c144161a565f567c4c592d103c814d6026bc34/images/dc_3.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Here, we have manually configured the IP address, subnet mask, and DNS server. Because it will be using itself as the DNS server, the loop back address '127.0.0.1' i used: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_5.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br/>
 d. Along with Adapter 1 'NAT' that is turned on by default, enable Adapter 2 as an interal network: <br/>
