@@ -24,6 +24,7 @@ __1. Configuring the Network Adapters and Domain Controller IPv4 Address__ <br/>
 </br>
 a. Distinguish the internal network from the NAT connection by renaming them. In this case, the NAT connection can be easily discerned by the 10.0.2.15 IP address:
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_2.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
