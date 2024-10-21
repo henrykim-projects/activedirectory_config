@@ -39,7 +39,7 @@ Here, we have manually configured the IP address, subnet mask, and DNS server. B
 
 __2. Adding AD Domain Services__ <br/>
 <br/>
-a. Next we will be adding AD Domain Services through server roles:
+a. Next we will be adding AD Domain Services: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/888ec3e102923dc668412a4d4668d7b0429c636f/images/nc_6.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
