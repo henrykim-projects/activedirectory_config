@@ -3,15 +3,15 @@
 
 <h2>Description</h2>
 This project involves creating an internal network with virtual machines. DHCP, NAT, and AD Domain services will be set up to provide users with IP addresses, allowing internet access through the Domain Controller rather than an external connection. A PowerShell script will be used to create a bulk of random user accounts. Successful connectivity will be confirmed by logging into a user account with provided login username and password. 
-In the preliminary setup, we will use Oracle Virtual Box to create a VM and allot the necessary RAM and CPU cores to install Server 2019. This Domain Controller VM will be used to manually configure the internal network in the next step.
+In this step, we will be configuring the Domain Controller with the protocols necessary to manage the internal network. 
 <br/>
 
 
 <h2>Environments and Technologies Used</h2>
 
 - <b>Active Directory</b>
-- <b>Oracle Virtual Box</b>
-- <b>Virtual Machine Configuration</b>
+- <b>Remote Desktop</b>
+- <b>Network Configuration</b>
 
 <h2>Environments Used </h2>
 
@@ -20,10 +20,11 @@ In the preliminary setup, we will use Oracle Virtual Box to create a VM and allo
 
 <h2>Configuration Steps:</h2>
 
-__1. Creating the Domain Controller__ <br/>
+__1. Configuring the Network Adapters and Domain Controller IPv4 Address__ <br/>
 </br>
-a. In Virtual Box, create a VM named "DC":
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/36110ff5676e843ba76b5a4e3311292910214abc/images/dc_1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+a. Distinguish the internal network from the NAT connection by renaming them. In this case, the NAT connection can be easily discerned by the 10.0.2.15 IP address:
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_2.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 b. Allocate the appropriate RAM and CPU cores:  <br/>
