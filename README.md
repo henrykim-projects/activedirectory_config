@@ -31,18 +31,15 @@ b. Provide the IPv4 address for the Domain Controller's internal network adapter
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_4.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br/>
 <br />
-Here, we have manually configured the IP address, subnet mask, and DNS server. Because it will be using itself as the DNS server, the loop back address '127.0.0.1' i used: <br/>
+Here, we have manually configured the IP address, subnet mask, and DNS server. Because the Domain Controller will be using itself as the DNS server, the loop back address '127.0.0.1' is used: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_5.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br/>
-d. Along with Adapter 1 'NAT' that is turned on by default, enable Adapter 2 as an interal network: <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/90be8d8a94e768dd13fbd97e420f837f43bc129a/images/dc_6.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
+
+__2. Adding AD Domain Services__ <br/>
 <br/>
-__2. Installing Server 2019__ <br/>
-<br/>
-a. Turn on the VM and boot the Server iso.:
-<img src="https://github.com/henrykim-projects/activedirectory_setup/blob/7cca62df74893d64752e848328e66cf789d87fa9/images/dc_7.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+a. Next we will be adding AD Domain Services through server roles:
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/888ec3e102923dc668412a4d4668d7b0429c636f/images/nc_6.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br /> 
 <br/>
 b. Select the Standard Desktop Experience for GUI and ease of use: <br/>
