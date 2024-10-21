@@ -23,8 +23,8 @@ In this step, we will be configuring the Domain Controller with the protocols ne
 __1. Configuring the Network Adapters and Domain Controller IPv4 Address__ <br/>
 </br>
 a. Distinguish the internal network from the NAT connection by renaming them. In this case, the NAT connection can be easily discerned by the 10.0.2.15 IP address:
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_2.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_2.PNG" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 b. Provide the IPv4 address for the Domain Controller's internal network adapter:  <br/>
