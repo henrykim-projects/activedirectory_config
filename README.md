@@ -22,7 +22,7 @@ In this step, we will be configuring the Domain Controller with the protocols ne
 
 __1. Adding AD Domain Services and Post Deployment Configuration__ <br/>
 <br/>
-a. Next we will be adding AD Domain Services: <br/>
+a. Next we will be adding AD Domain Services, this serves as the database to manage users and permissions with: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/888ec3e102923dc668412a4d4668d7b0429c636f/images/nc_6.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
@@ -59,16 +59,53 @@ a. In "Add Server Roles", select Remote Access: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_19.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
-b. We will configure NAT to connect users to the internet through one IP address: <br/>
+b. We will configure NAT to connect users to the internet through one IP address, the Domain Controller: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_20.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_21.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-
+<br/> 
+<br/>
+c. Select the Internet connection we labelled from the setup portion of the project (not the internal network)
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_22.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+d. The Domain Controller will have a green indicator to confirm network connectivity
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_22.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+__3. DHCP Server Configuration__ <br/>
+<br/>
+a. Add DHCP in server roles for remote server adiministration: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_24.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+b. Manually configure the scope, the range of IP addresses, available as well as the subnet mask : <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_25.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_26.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+c. It is possible to set the duration for distributed IP addresses. This is commonly seen in cafes, where Wi-Fi access is limited to a couple hours, and additional purchase is necessaru for reconnection: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_27.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+d. Set the default gateway, as well as the DNS server, to the Domain Controller's IP address: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_28.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_29.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+e. Now the network is ready to provide IP addresses within a scope for new users. Current leases, policies, and other management tools are available to facilitate user access: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_30.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
 </p>
 
 <h2>Final Thoughts</h2>
-With the Domain Controller set up on a VM connected to the internal network, it is now possible to configure AD services and other networking protocols to set up our network. This was great hands-on experience that demonstrates concepts in network configuration, remmote desktop, and virtual machines. Next we will be providing users with internet access by a DHCP provided IP address.
+Now that DHCP/DNS, Remote Access, and Domain Services are fully configured, we are ready to add users to our network. Active Directory demonstrated many features that give granular control to how and to whom internet is provided. We also saw modes of access management and identity security in the form of organizational units, admin account controls, and IP lease durations. In the final step, we will add users generated through a Powershell script and confirm network connectivity through a DHCP-provided IP address. 
 <br><br/>
 <!--
  ```diff
