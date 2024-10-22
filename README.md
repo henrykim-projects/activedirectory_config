@@ -20,24 +20,7 @@ In this step, we will be configuring the Domain Controller with the protocols ne
 
 <h2>Configuration Steps:</h2>
 
-__1. Configuring the Network Adapters and Domain Controller IPv4 Address__ <br/>
-</br>
-a. Distinguish the internal network from the NAT connection by renaming them. In this case, the NAT connection can be easily discerned by the 10.0.2.15 IP address:
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_2.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-<br/>
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/8145d25f7512cb302bc680d3de4bd4ccc6676812/images/nc_1.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-b. Provide the IPv4 address for the Domain Controller's internal network adapter:  <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_4.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-<br/>
-<br />
-Here, we have manually configured the IP address, subnet mask, and DNS server. Because the Domain Controller will be using itself as the DNS server, the loop back address '127.0.0.1' is used: <br/>
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/b6ec3867b0209eac8bf82a9a2fdc9fce8d73639e/images/nc_5.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
-<br />
-<br/>
-
-__2. Adding AD Domain Services and Post Deployment Configuration__ <br/>
+__1. Adding AD Domain Services and Post Deployment Configuration__ <br/>
 <br/>
 a. Next we will be adding AD Domain Services: <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/888ec3e102923dc668412a4d4668d7b0429c636f/images/nc_6.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -64,7 +47,15 @@ f. Create admin account. Password expiration and change password settings add la
 <br/> 
 <br/>
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/25b2e12ea93c1007e18c14c32d4346ab17dfd628/images/nc_16.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-
+<br/> 
+<br/>
+The account is now in both Users and Admins groups
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/c6a8cd48df4631062bc775b02b18d89e1df486c4/images/nc_18.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br />
+<br/>
+__2. Adding Routing and Remote Access__ <br/>
+<br/>
+a. 
 </p>
 
 <h2>Final Thoughts</h2>
