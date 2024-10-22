@@ -55,7 +55,16 @@ The account is now in both Users and Admins groups
 <br/>
 __2. Adding Routing and Remote Access__ <br/>
 <br/>
-a. 
+a. In "Add Server Roles", select Remote Access: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_19.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+b. We will configure NAT to connect users to the internet through one IP address: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_20.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/fb1fd1b9678440ccd11c9a9ef883e3d27979df78/images/nc_21.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
 </p>
 
 <h2>Final Thoughts</h2>
