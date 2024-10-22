@@ -55,6 +55,16 @@ d. After successfully completeing configuration, the domain name and admin accou
 <img src="https://github.com/henrykim-projects/activedirectory_config/blob/7d2b6b00db83259673f2465f2696081894db7a65/images/nc_11.PNG" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+e. With AD Users and Computers, create a organizational unit for admin accounts: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/25b2e12ea93c1007e18c14c32d4346ab17dfd628/images/nc_13.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+f. Create admin account. Password expiration and change password settings add layers of account management: <br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/25b2e12ea93c1007e18c14c32d4346ab17dfd628/images/nc_15.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<br/> 
+<br/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/25b2e12ea93c1007e18c14c32d4346ab17dfd628/images/nc_16.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+
 </p>
 
 <h2>Final Thoughts</h2>
