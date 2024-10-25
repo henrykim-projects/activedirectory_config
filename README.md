@@ -71,7 +71,7 @@ c. Select the Internet connection we labelled from the setup portion of the proj
 <br/> 
 <br/>
 d. The Domain Controller will have a green indicator to confirm network connectivity
-<img src="https://github.com/henrykim-projects/activedirectory_config/blob/07da8f3778af75e098ea64190f55abed46404224/images/nc_22.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/henrykim-projects/activedirectory_config/blob/2a34d15153eb4b8d00f982d95ce0def14f797953/images/nc_23.PNG" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br/> 
 <br/>
 __3. DHCP Server Configuration__ <br/>
