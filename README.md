@@ -3,8 +3,8 @@
 
 <h2>Description</h2>
 This project involves creating an internal network with virtual machines. DHCP, NAT, and AD Domain services will be set up to provide users with IP addresses, allowing internet access solely through the Domain Controller. A PowerShell script will be used to create a bulk of random user accounts. Successful connectivity will be confirmed by logging into a user account with provided login username and password. 
-With our virtual machines set up, we will be configuring the Domain Controller with the protocols necessary to manage the internal network. 
-<br/>
+With our virtual machines [set up](https://github.com/henrykim-projects/activedirectory_setup), we will be configuring the Domain Controller with the protocols necessary to manage the internal network. 
+
 
 <h2>Environments and Technologies Used</h2>
 
@@ -107,9 +107,9 @@ e. Now the network is ready to provide IP addresses within a scope for new users
 Now that DHCP/DNS, Remote Access, and Domain Services are fully configured, we are ready to add users to our network. Active Directory demonstrated many features that give granular control to how and to whom internet is provided. We also saw modes of access management and identity security in the form of organizational units, admin account controls, and IP lease durations. In the final step, we will add users generated through a Powershell script and confirm network connectivity through a DHCP-provided IP address. 
 <br/>
 The other parts of this project below:
-<br/>
+
 Part 1: [Virtual Machine and Domain Controller Set Up](https://github.com/henrykim-projects/activedirectory_setup)
-<br/>
+
 Part 3: [User Generation and Client Connecvitivty](https://github.com/henrykim-projects/activedirectory_users) 
 <br><br/>
 <!--
